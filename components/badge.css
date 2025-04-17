@@ -1,0 +1,902 @@
+/* Badge Component Styles */
+.q-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #3b82f6;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+  letter-spacing: 0.025em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Size Variations */
+.q-badge-xs {
+  padding: 0.125rem 0.5rem;
+  font-size: 0.625rem;
+}
+
+.q-badge-sm {
+  padding: 0.25rem 0.625rem;
+  font-size: 0.6875rem;
+}
+
+.q-badge-md {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.q-badge-lg {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.q-badge-xl {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+}
+
+/* Modern Color Variations */
+.q-badge-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-secondary {
+  background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(107, 114, 128, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-danger {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-warning {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-info {
+  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-dark {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(31, 41, 55, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-light {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  color: #1f2937;
+  box-shadow: 0 2px 4px rgba(243, 244, 246, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Badge with Icon */
+.q-badge i {
+  margin-right: 0.375rem;
+  font-size: 0.875em;
+  transition: transform 0.3s ease;
+}
+
+.q-badge:hover i {
+  transform: scale(1.2);
+}
+
+/* Dismissible Badge */
+.q-badge-dismissible {
+  padding-right: 0.5rem;
+}
+
+.q-badge-dismissible .q-badge-dismiss {
+  margin-left: 0.375rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.q-badge-dismissible .q-badge-dismiss:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+/* Outline Badge */
+.q-badge-outline {
+  background-color: transparent;
+  border: 1px solid currentColor;
+}
+
+.q-badge-outline.q-badge-primary {
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.q-badge-outline.q-badge-secondary {
+  color: #6b7280;
+  border-color: #6b7280;
+}
+
+.q-badge-outline.q-badge-success {
+  color: #10b981;
+  border-color: #10b981;
+}
+
+.q-badge-outline.q-badge-danger {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.q-badge-outline.q-badge-warning {
+  color: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.q-badge-outline.q-badge-info {
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.q-badge-outline.q-badge-dark {
+  color: #1f2937;
+  border-color: #1f2937;
+}
+
+.q-badge-outline.q-badge-light {
+  color: #6b7280;
+  border-color: #e5e7eb;
+}
+
+/* Rounded Badge */
+.q-badge-rounded {
+  border-radius: 9999px;
+}
+
+.q-badge-rounded-sm {
+  border-radius: 0.375rem;
+}
+
+.q-badge-rounded-lg {
+  border-radius: 1rem;
+}
+
+/* Shadow Badge */
+.q-badge-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.q-badge-shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Hover Effects */
+.q-badge-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.q-badge-hover:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  filter: brightness(1.1);
+}
+
+/* Gradient Badge */
+.q-badge-gradient {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.q-badge-gradient-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+.q-badge-gradient-danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+}
+
+.q-badge-gradient-warning {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
+}
+
+/* Animated Badge */
+.q-badge-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.q-badge-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.q-badge-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* Counter Badge */
+.q-badge-counter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Glow Effect */
+.q-badge-glow {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.q-badge-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.7);
+}
+
+/* Scale Effect */
+.q-badge-scale {
+  transition: transform 0.3s ease;
+}
+
+.q-badge-scale:hover {
+  transform: scale(1.1);
+}
+
+/* Accent Border */
+.q-badge-accent {
+  border-left: 3px solid #3b82f6;
+}
+
+/* Shine Effect */
+.q-badge-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.q-badge-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.q-badge-shine:hover::before {
+  left: 100%;
+}
+
+/* Improved Glass Effect */
+.q-badge-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.q-badge-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced Neon Effect */
+.q-badge-neon {
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5),
+              0 0 10px rgba(59, 130, 246, 0.3),
+              0 0 15px rgba(59, 130, 246, 0.2),
+              inset 0 0 5px rgba(59, 130, 246, 0.1);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  animation: neonPulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5),
+                0 0 10px rgba(59, 130, 246, 0.3),
+                0 0 15px rgba(59, 130, 246, 0.2),
+                inset 0 0 5px rgba(59, 130, 246, 0.1);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.7),
+                0 0 20px rgba(59, 130, 246, 0.5),
+                0 0 30px rgba(59, 130, 246, 0.3),
+                inset 0 0 10px rgba(59, 130, 246, 0.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* New Rainbow Effect */
+.q-badge-rainbow {
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff8000,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff
+  );
+  background-size: 200% auto;
+  animation: rainbow 6s linear infinite;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* New Ripple Effect */
+.q-badge-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.q-badge-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.q-badge-ripple:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* New 3D Effect */
+.q-badge-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.q-badge-3d:hover {
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+/* New Magnetic Effect */
+.q-badge-magnetic {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.q-badge-magnetic:hover {
+  transform: translate(var(--mx, 0), var(--my, 0));
+}
+
+/* Liquid Badge */
+.q-badge-liquid {
+  position: relative;
+  background: linear-gradient(45deg, #3b82f6, #2563eb);
+  animation: liquidMove 8s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes liquidMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Holographic Badge */
+.q-badge-holographic {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  animation: holographic 3s linear infinite;
+}
+
+@keyframes holographic {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* New Particle Effect */
+.q-badge-particle {
+  position: relative;
+}
+
+.q-badge-particle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, #fff 1px, transparent 1px);
+  background-size: 8px 8px;
+  animation: particleFloat 20s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes particleFloat {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
+}
+
+/* New Cyberpunk Effect */
+.q-badge-cyberpunk {
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  border: 2px solid #00ff00;
+  text-shadow: 2px 2px #ff00ff;
+  animation: cyberpunkGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes cyberpunkGlow {
+  from { box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
+  to { box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff; }
+}
+
+/* New Noise Effect */
+.q-badge-noise {
+  position: relative;
+  overflow: hidden;
+}
+
+.q-badge-noise::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.1;
+  animation: noise 0.2s infinite;
+}
+
+@keyframes noise {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -5%); }
+  20% { transform: translate(-10%, 5%); }
+  30% { transform: translate(5%, -10%); }
+  40% { transform: translate(-5%, 15%); }
+  50% { transform: translate(-10%, 5%); }
+  60% { transform: translate(15%, 0); }
+  70% { transform: translate(0, 10%); }
+  80% { transform: translate(-15%, 0); }
+  90% { transform: translate(10%, 5%); }
+  100% { transform: translate(5%, 0); }
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 576px) {
+  .q-badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6875rem;
+  }
+  
+  .q-badge-lg {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+  
+  .q-badge-xl {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .q-badge-hover:hover {
+    transform: translateY(-1px) scale(1.03);
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .q-badge-glass {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .q-badge-light {
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    color: #ffffff;
+  }
+}
+
+/* Add new color schemes */
+.q-badge-gradient-ocean {
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 50%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(14, 165, 233, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-gradient-sunset {
+  background: linear-gradient(135deg, #f97316 0%, #db2777 50%, #7c3aed 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-gradient-forest {
+  background: linear-gradient(135deg, #22c55e 0%, #15803d 50%, #166534 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Morphing Badge */
+.q-badge-morph {
+  animation: morphing 10s ease-in-out infinite;
+  background-image: linear-gradient(45deg, #ff0080 0%, #ff8c00 100%);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    background-position: 0% 0%;
+  }
+  25% { 
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    background-position: 100% 100%;
+  }
+  75% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    background-position: 0% 0%;
+  }
+}
+
+/* Aurora Badge */
+.q-badge-aurora {
+  background: linear-gradient(
+    60deg,
+    rgba(84, 220, 255, 0.7),
+    rgba(111, 123, 247, 0.7),
+    rgba(162, 90, 255, 0.7)
+  );
+  animation: aurora 15s ease infinite;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Spotlight Badge */
+.q-badge-spotlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.q-badge-spotlight::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  transform: translate(-100%, -100%);
+  transition: transform 0.6s ease-out;
+}
+
+.q-badge-spotlight:hover::before {
+  transform: translate(0, 0);
+}
+
+/* Floating Border Badge */
+.q-badge-floating-border {
+  position: relative;
+  border: none;
+  background-clip: padding-box;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.q-badge-floating-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    #ff0080,
+    #ff8c00,
+    #00ff00,
+    #00bfff,
+    #ff0080
+  );
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* New Shimmering Effect */
+.q-badge-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* New Elastic Effect */
+.q-badge-elastic {
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.q-badge-elastic:hover {
+  transform: scale(1.1);
+  animation: elastic 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes elastic {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.15); }
+  40% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  65% { transform: scale(0.98); }
+  75% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+/* New Magnetic Pull Effect */
+.q-badge-magnetic-pull {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.q-badge-magnetic-pull:hover {
+  animation: magneticPull 1s cubic-bezier(0.23, 1, 0.32, 1) infinite alternate;
+}
+
+@keyframes magneticPull {
+  0% { transform: translateX(-2px) translateY(-2px); }
+  100% { transform: translateX(2px) translateY(2px); }
+}
+
+/* New Glowing Pulse Effect */
+.q-badge-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+                0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+                0 0 30px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+                0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* New Cosmic Effect */
+.q-badge-cosmic {
+  background: linear-gradient(45deg, #000000, #434343);
+  animation: cosmic 20s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.q-badge-cosmic::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(
+    circle,
+    transparent 20%,
+    rgba(255, 255, 255, 0.3) 20%,
+    rgba(255, 255, 255, 0.3) 40%,
+    transparent 40%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0.3) 80%,
+    transparent 80%
+  );
+  animation: cosmosSpin 4s linear infinite;
+}
+
+@keyframes cosmic {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes cosmosSpin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Enhanced Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .q-badge {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .q-badge-glass {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px) saturate(180%);
+  }
+
+  .q-badge-gradient-ocean {
+    background: linear-gradient(135deg, #0369a1 0%, #1e40af 50%, #1e3a8a 100%);
+  }
+
+  .q-badge-gradient-sunset {
+    background: linear-gradient(135deg, #c2410c 0%, #be185d 50%, #5b21b6 100%);
+  }
+
+  .q-badge-gradient-forest {
+    background: linear-gradient(135deg, #15803d 0%, #166534 50%, #14532d 100%);
+  }
+}
+
+/* New Accessibility Features */
+@media (prefers-reduced-motion: reduce) {
+  .q-badge {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .q-badge::before,
+  .q-badge::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Print Optimization */
+@media print {
+  .q-badge {
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
+} 

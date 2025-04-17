@@ -1,0 +1,23 @@
+{
+  "name": "prod",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/main.css -o dist/queryon-css.min.css",
+    "build:js": "terser src/main.js -o dist/queryon.min.js --compress --mangle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "postcss-import": "^16.1.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "terser": "^5.39.0"
+  }
+}

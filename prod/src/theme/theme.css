@@ -1,0 +1,41 @@
+/* Base styles */
+:root {
+    --navbar-height: 70px;
+    --primary-color: #4361ee;
+    --primary-hover: #3a56d4;
+    --secondary-color: #4f5d75;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --info-color: #3498db;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --text-color: #333; 
+    --text-muted: #6c757d;
+    --border-color: #e9ecef;
+    --border-radius: 0.25rem;
+    --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --transition-speed: 0.3s;
+}
+
+body {
+    color: var(--text-color);
+}
+
+body.dark-mode {
+    --text-color: #f8f9fa;
+    --text-muted: #adb5bd;
+    --border-color: #495057;
+    --q-bg: #121212;
+    --q-border: #2d2d2d;
+    background-color: #121212;
+}
+
+/* Logo styles */
+.navbar-brand img {
+    transition: filter 0.3s ease;
+}
+
+body.dark-mode .navbar-brand img {
+    filter: brightness(1.2);
+}

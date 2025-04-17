@@ -1,0 +1,650 @@
+/* 
+ * Queryon Utilities
+ * A collection of helpful utility classes for quick styling
+ */
+
+/* Spacing Utilities */
+.q-p-0 { padding: 0px; }
+.q-p-1 { padding: 1px; }
+.q-p-2 { padding: 3px; }
+.q-p-3 { padding: 6px; }
+.q-p-4 { padding: 9px; }
+.q-p-5 { padding: 20px; }
+
+/* Vertical Spacing (Top & Bottom) */
+.q-py-0 { 
+    padding-top: 0; 
+    padding-bottom: 0; 
+}
+.q-py-1 { 
+    padding-top: 2px; 
+    padding-bottom: 2px; 
+}
+.q-py-2 { 
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+.q-py-3 {
+    padding-top: 12px; 
+    padding-bottom: 12px;
+}
+.q-py-4 { 
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.q-py-5 { 
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+/* Horizontal Spacing (Left & Right) */
+.q-px-0 { 
+    padding-left: 0;
+    padding-right: 0; 
+}
+.q-px-1 { 
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.q-px-2 { padding-left: 8px; 
+    padding-right: 12px;
+}
+.q-px-3 { 
+    padding-left: 16px; 
+    padding-right: 16px; 
+}
+.q-px-4 { 
+    padding-left: 24px; 
+    padding-right: 24px; 
+}
+/* padding top */
+.q-pt-1 { 
+    padding-top: 1px; 
+}
+.q-pt-2{ 
+    padding-top: 1px;
+}
+.q-pt-3 {
+    padding-top: 8px;
+}
+.q-pt-Standard {
+    padding-top: 16px;
+}
+.q-pt-4 {
+    padding-top: 24px;
+}
+.q-pt-5 {
+    padding-top: 32px;
+}
+/* padding bottom*/
+.q-pb-0 {
+    padding-bottom: 0;
+}
+.q-pb-2 {
+    padding-bottom: 8px;
+}
+.q-pb-4 {
+    padding-bottom: 16px;
+}
+.q-pb-6 {
+    padding-bottom: 24px;
+}
+.q-pb-8 {
+    padding-bottom: 32px;
+}
+.q-pb-10 {
+    padding-bottom: 40px;
+}
+.q-pb-12 {
+    padding-bottom: 48px;
+}
+/* padding left */
+.q-pl-0 {
+    padding-left: 0;
+}
+.q-pl-2 {
+    padding-left: 8px;
+}
+.q-pl-4 {
+    padding-left: 16px;
+}
+.q-pl-6 {
+    padding-left: 24px;
+}
+.q-pl-8 {
+    padding-left: 32px;
+}
+.q-pl-10 {
+    padding-left: 40px;
+}
+.q-pl-12 {
+    padding-left: 48px;
+}
+/* padding right */
+.q-pr-0 {
+    padding-right: 0;
+}
+.q-pr-2 {
+    padding-right: 8px;
+}
+.q-pr-4 {
+    padding-right: 16px;
+}
+.q-pr-6 {
+    padding-right: 24px;
+}
+.q-pr-8 {
+    padding-right: 32px;
+}
+.q-pr-10 {
+    padding-right: 40px;
+}
+.q-pr-12 {
+    padding-right: 48px;
+}
+/* button */
+/* Button padding */
+.q-px-5 { 
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+.q-py-2 { 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+}
+/* Default/Medium button */
+.q-btn-standard {
+    padding: 8px 20px;
+}
+
+/* margin */
+/* Bottom Margins (Most Common) */
+.q-mb-2 {
+    margin-bottom: 8px;    /* Small gap */
+}
+.q-mb-4 {
+    margin-bottom: 16px;   /* Standard gap */
+}
+.q-mb-8 {
+    margin-bottom: 32px;   /* Large gap */
+}
+/* Auto Margins for Layout */
+.q-mx-auto {
+    margin-left: auto;
+    margin-right: auto;    /* Center align */
+}
+/* Right Margin (For inline items) */
+.q-mr-2 {
+    margin-right: 8px;     /* Space between items */
+}
+/* Top Margin */
+.q-mt-4 {
+    margin-top: 16px;      /* Standard top space */
+}
+/* Basic Cursors */
+.q-cursor-pointer { cursor: pointer; }
+.q-cursor-default { cursor: default; }
+.q-cursor-text { cursor: text; }
+.q-cursor-move { cursor: move; }
+.q-cursor-grab { cursor: grab; }
+.q-cursor-grabbing { cursor: grabbing; }
+/* Status Cursors */
+.q-cursor-wait { cursor: wait; }
+.q-cursor-progress { cursor: progress; }
+.q-cursor-not-allowed { cursor: not-allowed; }
+/* Resize Cursors */
+.q-cursor-col-resize { cursor: col-resize; }
+.q-cursor-row-resize { cursor: row-resize; }
+/* Help Cursor */
+.q-cursor-help { cursor: help; }
+/* Position Types */
+.q-pos-relative { position: relative; }
+.q-pos-absolute { position: absolute; }
+.q-pos-fixed { position: fixed; }
+.q-pos-sticky { position: sticky; }
+.q-pos-static { position: static; }
+/* Common Positioning Utilities */
+.q-top-0 { top: 0; }
+.q-right-0 { right: 0; }
+.q-bottom-0 { bottom: 0; }
+.q-left-0 { left: 0; }
+/* Center Positioning */
+.q-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Z-index Utilities */
+.q-z-0 { z-index: 0; }
+.q-z-10 { z-index: 10; }
+.q-z-20 { z-index: 20; }
+.q-z-30 { z-index: 30; }
+.q-z-40 { z-index: 40; }
+.q-z-50 { z-index: 50; }
+/* style for width */
+.q-w-1{
+    width: 20%;
+}
+.q-w-2{
+    width: 25%;
+}
+.q-w-3{
+    width: 33%;
+}
+.q-w-4{
+    width: 50%;
+}
+.q-w-5{
+    width: 75%;
+}
+/* Two-thirds width */
+.q-w-66 {
+    width: 66.666667%;
+}
+/* Auto width */
+.q-w-auto {
+    width: auto;
+}
+/* height */
+.q-h-100 {
+    height: 100%;
+}
+.q-h-75 {
+    height: 75%;
+}
+.q-h-50 {
+    height: 50%;
+}
+.q-h-25 {
+    height: 25%;
+}
+/* css unit */
+.q-body{
+    font-size: 10px;
+}
+.q-fs-1rem{
+    font-size: 1rem;
+}
+.q-w-20vw{
+    width:15cm;
+    overflow: scroll;
+}
+.q-overflow-visible{
+    overflow: visible;
+}
+.q-overflow-scroll{
+    overflow: scroll;
+}
+.q-overflow-y-visible{
+    overflow-y: visible;
+}
+.q-overflow-y-hidden{
+    overflow-y: hidden;
+}
+.q-overflow-y-scroll{
+    overflow-y: scroll;
+}
+.q-overflow-x-hidden{
+    overflow-x: hidden;
+}
+.q-overflow-x-scroll{
+    overflow-x: scroll;
+}
+/* background img */
+.q-test-container{
+    width: 250px;
+    height: 250px;
+    background-image:url(https://in.images.search.yahoo.com/images/view;_ylt=Awr1SacPQf5n10gjsIy9HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzA1YjBiYWZjNGJhY2JhZTE1NmM4MjIyZDUwMzVkNTgxBGdwb3MDMTExBGl0A2Jpbmc-?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dbackground%2Bimage%2Bfor%2Bwebsite%2Bblue%2Blittle%2Bpalin%26ei%3DUTF-8%26type%3DE210IN885G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26nost%3D1%26tab%3Dorganic%26ri%3D111&w=12500&h=8334&imgurl=static.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F549%2F667%2Foriginal%2Fblue-particle-line-wave-abstract-background-modern-design-with-copy-space-vector-illustration-for-your-business-and-web-banner-design.jpg&rurl=https%3A%2F%2Fwww.vrogue.co%2Fpost%2Fabstract-blue-background-vector-graphic-6-free-vector-graphics-all&size=4076KB&p=background+image+for+website+blue+little+palin&oid=05b0bafc4bacbae156c8222d5035d581&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=Abstract+Blue+Background+Vector+Graphic+6+Free+Vector+-+vrogue.co&b=61&ni=160&no=111&ts=&tab=organic&sigr=hK2KPaCMHrDe&sigb=En14FrdZsenX&sigi=5sv7lnosqd9w&sigt=27L.BczTteWA&.crumb=xi0QUxt9sFT&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210IN885G0);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+/* Full Cover Background (Most Used) */
+.q-bg-cover {
+    background-image: url('path/to/image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* positon */
+.q-bg-c{
+    background-position: center;
+}
+.q-bg-t{
+    background-position: top;
+}
+.q-bg-l{
+    background-position: left;
+}
+.q-bg-r{
+    background-position: right;}
+/* bg size */
+.q-bg-size-contain{
+    background-size: contain;
+}
+.q-bg-size-cover{
+    background-size:cover;
+}
+/* bg repeat */
+.q-bg-repeat{
+    background-repeat: repeat;
+}
+.q-bg-norepeat{
+    background-repeat: no-repeat;
+}
+.q-bg-repeat-x{
+    background-repeat: repeat-x;
+}
+.q-bg-repeat-y{
+    background-repeat: repeat-y;
+}
+/* origin bg*/
+.q-bg-origin-content{
+    background-origin: content-box;
+}
+.q-bg-origin-pad{
+    background-origin: padding-box;
+}
+.q-bg-origin-bdr{
+    background-origin: border-box;
+}
+/* clip bg */
+.bg-clip-content{
+    background-clip:content-box;
+}
+/* csss layouts */
+.q-flex{
+    display: flex;
+    display: -moz-grid;
+    display:-webkit-flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.q-justify-btw{
+    justify-content: space-between;
+}
+.q-justify-aound{
+    justify-content: space-around;
+}
+.q-justify-centre{
+    justify-content: center;
+}
+.q-justify-start{
+    justify-content: start;
+}
+.q-justify-end{
+    justify-content: end;
+}
+.q-justify-flex-start{
+    justify-content: flex-start;
+}
+.q-justify-flex-end{
+    justify-content: flex-end;
+}
+.q-items-centre{
+    align-items:center;
+}
+.q-items-start{
+    align-items:start;
+}
+.q-items-end{
+    align-items: end;
+}
+.q-items-self-start{
+    align-items: self-start;
+}
+.q-items-self-end{
+    align-items: self-end;
+}
+/* Align Content Properties */
+.q-align-content-center {
+    align-content: center;
+}
+.q-align-content-start {
+    align-content: flex-start;
+}
+.q-align-content-end {
+    align-content: flex-end;
+}
+.q-align-content-between {
+    align-content: space-between;
+}
+.q-align-content-around {
+    align-content: space-around;
+}
+.q-align-content-stretch {
+    align-content: stretch;
+}
+/* transiton */
+/* Basic Hover Transitions */
+.q-hover-scale {
+    transition: transform 0.3s ease;
+}
+.q-hover-scale:hover {
+    transform: scale(1.05);
+}
+.q-hover-up {
+    transition: transform 0.3s ease;
+}
+.q-hover-up:hover {
+    transform: translateY(-5px);
+}
+/* Opacity Hover */
+.q-hover-fade {
+    transition: opacity 0.3s ease;
+}
+.q-hover-fade:hover {
+    opacity: 0.8;
+}
+/* Shadow Hover */
+.q-hover-shadow {
+    transition: box-shadow 0.3s ease;
+}
+.q-hover-shadow:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Color Transition */
+.q-hover-color {
+    transition: all 0.3s ease;
+}
+.q-hover-color:hover {
+    background-color: #0056b3;
+    color: white;
+}
+/* Combined Card Hover */
+.q-hover-card {
+    transition: all 0.3s ease;
+}
+.q-hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Modern Container System with Colors 2024 */
+/* Color Variables */
+:root {
+    /* Primary Colors */
+    --primary-50: #eff6ff;
+    --primary-100: #dbeafe;
+    --primary-500: #3b82f6;
+    --primary-600: #2563eb;
+    --primary-700: #1d4ed8;
+    /* Success Colors */
+    --success-50: #f0fdf4;
+    --success-100: #dcfce7;
+    --success-500: #22c55e;
+    --success-600: #16a34a;
+    /* Warning Colors */
+    --warning-50: #fffbeb;
+    --warning-100: #fef3c7;
+    --warning-500: #f59e0b;
+    --warning-600: #d97706;
+    /* Error Colors */
+    --error-50: #fef2f2;
+    --error-100: #fee2e2;
+    --error-500: #ef4444;
+    --error-600: #dc2626;
+    /* Neutral Colors */
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    /* Glass Effect */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+/* 1. Modern Hero Container */
+.q-container-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.q-container-hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, 
+                rgba(59, 130, 246, 0.3), 
+                transparent 50%);
+}
+.q-container-hero-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+/* 2. Glass Container */
+.q-container-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+/* 3. Gradient Section Container */
+.q-container-gradient {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+}
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* 4. Modern Dashboard Container */
+.q-container-dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+}
+.q-dashboard-sidebar {
+    background: var(--sidebar-bg);
+    padding: 1rem;
+}
+.q-dashboard-main {
+    padding: 2rem;
+}
+/* 5. Feature Grid Container */
+.q-container-features {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+.q-feature-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: var(--card-bg);
+    transition: transform 0.3s ease;
+}
+.q-feature-card:hover {
+    transform: translateY(-5px);
+}
+/* 6. Content Section Containers */
+.q-container-light {
+    background: white;
+    padding: 4rem 2rem;
+}
+.q-container-dark {
+    background: var(--gray-900);
+    color: white;
+    padding: 4rem 2rem;
+}
+.q-container-primary {
+    background: var(--primary-600);
+    color: white;
+    padding: 4rem 2rem;
+}
+/* 7. Card Grid Container */
+.q-container-cards {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .q-container-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* 8. Modern Header Container */
+.q-container-header {
+    background: white;
+    border-bottom: 1px solid var(--gray-200);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.q-header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 9. Gradient Border Container */
+.q-container-border-gradient {
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: white;
+}
+.q-container-border-gradient::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(
+        45deg,
+        var(--primary-500),
+        var(--success-500),
+        var(--primary-500)
+    );
+}
+/* 10. Stats Grid Container */
+.q-container-stats {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(
+        to right,
+        var(--primary-50),
+        var(--success-50)
+    );
+}
+@media (min-width: 768px) {
+    .q-container-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
